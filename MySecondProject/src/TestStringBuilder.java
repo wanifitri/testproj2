@@ -24,22 +24,22 @@ public class TestStringBuilder {
 		// TODO Auto-generated method stub
 		
 		
-		StringBuilder sb = new StringBuilder(args [0]); //initialize the stringbuilder class with string passed via command line
-		//String constant = "Studying";
+		StringBuilder sb = new StringBuilder("I am studying java"); //initialize the stringbuilder class with string passed via command line
+		String constant = "Studying";
 		
 		
-		{
 		
-		System.out.println("Given string: " + sb + "with length" + sb.length());
-		System.out.println("first 3 characters" + sb.substring(0,3)); //print 1st three character
-		System.out.println("last 3 characters" + sb.substring(sb.length()-3)); //print last three character
+		System.out.println("Given string: " + sb + " with length" + sb.length());
+		System.out.println("first 3 characters " + sb.substring(0,3)); //print 1st three character
+		System.out.println("last 3 characters " + sb.substring(sb.length()-3)); //print last three character
 		
-		/*
+	
+		
 		int startOfConstant = sb.indexOf(constant);
 		int endOfConstant = startOfConstant + constant.length();
-		System.out.println("print studying" + sb.substring(startOfConstant()-1); //print studying
+		System.out.println("print studying: " + sb.substring(startOfConstant, endOfConstant)); //print studying
 		
-		
+		/**
 		sb.insert(sb.indexOf("am")+ 2), "wani" );//insert <name> after "am"
 		System.out.println("After insert" + sb);
 		sb.delete(sb.indexOf("am"), sb.indexOf("am") + 2);
@@ -60,6 +60,6 @@ public class TestStringBuilder {
 	
 }
 
-}
+
 				
 

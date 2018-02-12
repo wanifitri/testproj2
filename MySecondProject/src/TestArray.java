@@ -17,7 +17,7 @@ public class TestArray {
 		// TODO Auto-generated method stub
 		int salaries [] = {2222, 100, 50,60,170, 180, 1,5,10};
 		//Arrays.sort(salaries);
-		Arrays.binarySearch(salaries)
+		//Arrays.binarySearch(salaries)
 		
 		for(int sal:salaries) {
 			System.out.println("salaries is:" + sal);
