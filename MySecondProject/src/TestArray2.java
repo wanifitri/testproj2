@@ -21,16 +21,21 @@ public class TestArray2 {
 			course_subjects [1] [0] = "Ac-Accounting";
 			course_subjects [1] [1] = "Ac-Bahasa";
 			
-		String course_subjects [] [] = {{"Cs-Maths"," Cs-English"} , {"Ac-Accounting","Ac-Bahasa"}};	
+		String course_subjects [] [] = {{"Cs-Maths", " Cs-English"} , {"Ac-Accounting","Ac-Bahasa"}};	
 		
 		
+		/**
+		}}
 		
-		for(int i = 0;i < course_subjects.length; i++) {
-			for(int j = 0;j < course_subjects[i].length; j++) {
+		
+		for(string [] courses:course_subjects) {
+			//System.out.println("salaries is:" + sal);
+			for(String subjects:course) {
+				System.out.println("course and subject" + subject);
+				}
 				
-				System.out.println( "Course of" + i + "subject of" + j + "is" + course_subjects [i] [j]);
-			}
-		}
+				*/
+		
 	}
 }
 
