@@ -13,6 +13,7 @@
  * extract studying and print
  * insert <space> and <yourname> after "am"
  * delete the word "am"
+ * 
  */
  
 public class TestStringBuilder {
@@ -29,21 +30,25 @@ public class TestStringBuilder {
 		
 		
 		
-		System.out.println("Given string: " + sb + " with length" + sb.length());
-		System.out.println("first 3 characters " + sb.substring(0,3)); //print 1st three character
-		System.out.println("last 3 characters " + sb.substring(sb.length()-3)); //print last three character
+		System.out.println("Given string: " + sb + " with length " + sb.length());
+		System.out.println("first 3 characters are " + sb.substring(0,3)); //print 1st three character
+		System.out.println("last 3 characters are " + sb.substring(sb.length()-3)); //print last three character
 		
 	
 		
+		/**
 		int startOfConstant = sb.indexOf(constant);
-		int endOfConstant = startOfConstant + constant.length();
+	    int endOfConstant = startOfConstant + constant.length();
 		System.out.println("print studying: " + sb.substring(startOfConstant, endOfConstant)); //print studying
 		
-		/**
-		sb.insert(sb.indexOf("am")+ 2), "wani" );//insert <name> after "am"
+		
+		sb.insert (sb.indexOf("am")+ 2), "wani" );//insert <name> after "am"
 		System.out.println("After insert" + sb);
-		sb.delete(sb.indexOf("am"), sb.indexOf("am") + 2);
+		sb.delete(sb.indexOf("am"), sb.indexOf("am") + 2); //to delete word "am"
 		System.out.println("After delete" + sb);
+		System.out.println("Reverse is: " + sb.reverse());
+		
+		/**
 		
 		StringBuilder sb2 = new StringBuilder(args [0]);
 		System.out.println( sb == sb2);
