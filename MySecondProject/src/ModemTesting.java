@@ -1,11 +1,3 @@
-interface Modem {
- 
-  public boolean open();                               
-  public boolean close();
-  public int read ();
-  public int write();
-
-}
 
 // ----------------------------------------------------------
 
@@ -99,7 +91,7 @@ public class ModemTesting {
 	huaweimodem.read();
 	huaweimodem.close();
 	
-	MindstickModem[] modems = new MindstickModem[4];
+	Modem[] modems = new MindStickModem[4];
 	modems[1] = new MindStickModem ();
 	modems[0] = new HuaweiModem ();
 	modems[1] = new HuaweiModem ();
@@ -108,7 +100,7 @@ public class ModemTesting {
 	
 	for (Modem modem: modems) {
 		System.out.println(modem.modemVersion);
-		Modem.getmyName();
+		Modem.getMyName();
 		modem.open();
 		modem.write();
 		modem.read();

@@ -1,15 +1,15 @@
 interface Modem {
 	
 	
-  public string modemVersion = "V1";
+  public static final String modemVersion = "V1";
   public boolean open();                               
   public boolean close();
   public int read ();
-  public int write(byte[] buffer);
+  public int write();
   
-  public static string myName(){
+  public static String getMyName(){
 		return "Modem";
 		
 
 }
- 
+}
