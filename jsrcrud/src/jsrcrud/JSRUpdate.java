@@ -43,11 +43,11 @@ public class JSRUpdate {
 	        JSRMainSql.DisplayMenu();
 	    }
 
-	    private void DisplayRecord(String customer_id) throws SQLException {
+	    private void DisplayRecord(String id) throws SQLException {
 	        try {
 	            JSRDb dbUt = new JSRDb();
 
-	            String sql_stmt = "SELECT  firstname, age FROM employee WHERE id = " + id;
+	            String sql_stmt = "SELECT  firstname, age FROM employee WHERE id = " + id ;
 	            ResultSet resultSet = dbUt.ReadRecords(sql_stmt);
 
 	            // process query results
