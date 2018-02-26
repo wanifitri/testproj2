@@ -16,7 +16,7 @@ public class JSRRead {
         try {
             JSRDb dbUt = new JSRDb();
 
-            String sql_stmt = "SELECT id, age, first FROM employee";
+            String sql_stmt = "SELECT id, first, last,age FROM employee";
             ResultSet resultSet = dbUt.ReadRecords(sql_stmt);
 
             // process query results
@@ -24,7 +24,7 @@ public class JSRRead {
 
                 ResultSetMetaData metaData = resultSet.getMetaData();
                 int numberOfColumns = metaData.getColumnCount();
-                System.out.print("Database Records Listingn");
+                System.out.print("Database Records Listing");
 
                 for (int i = 1; i <= numberOfColumns; i++) {
                     System.out.printf("%-8st", metaData.getColumnName(i));
@@ -41,7 +41,7 @@ public class JSRRead {
                 System.out.println();
 
             } else {
-                System.out.println("No database records foundn");
+                System.out.println("No database records found");
             }
 
             //close db connection

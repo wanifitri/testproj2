@@ -38,18 +38,13 @@ public class JSRMainSql {
             case "2":
                 JSRRead read = new JSRRead();
                 break;
-                /*
+             
             case "3":
             	JSRUpdate update = new JSRUpdate();
                 break;
             case "4":
             	JSRDelete delete = new JSRDelete();
                 break;
-                */
-                
-                
-             
-      
             case "5":
                 System.exit(0);
                 break;

@@ -12,30 +12,30 @@ public class JSRUpdate {
 	        Scanner userInput = new Scanner(System.in);
 	        System.out.println("You selected option 3: Update database record: ");
 
-	        String customer_id;
-	        System.out.println("Enter customer id to update: ");
-	        customer_id = userInput.next();
+	        String id;
+	        System.out.println("Enter  id to update: ");
+	        id = userInput.next();
 
 	        //retrieve record to update
-	        DisplayRecord(customer_id);
+	        DisplayRecord(id);
 	        
-	        String id;
-	        System.out.println("Enter id number of employee: ");
-	        id = userInput.next();
-	        
-	        String firstname;
+	        String first;
 	        System.out.println("Enter first name of employee: ");
-	        firstname = userInput.next();
+	        first = userInput.next();
+	        
+	        String last;
+	        System.out.println("Enter last name of employee: ");
+	        last = userInput.next();
 
 	        String age;
-	        System.out.println("Enter contact email: ");
+	        System.out.println("Enter employee age: ");
 	        age = userInput.next();
 
 
 	        JSRDb dbUt = new JSRDb();
 
-	        String sql_stmt = "UPDATE employee SET firstname = '" + firstname + "',age = '" + age +  "' WHERE id = " + customer_id;
-
+	        String sql_stmt = "UPDATE employee SET first = '" + first + "',last ='"+ last+ "',age = '" + age +  "' WHERE id = " + id;
+	        //  String sql_stmt = "UPDATE contacts SET name = '" + name + "',email = '" + email + "',contact_number = '" + contact_number + "' WHERE id = " + customer_id;
 	        dbUt.ExecuteSQLStatement(sql_stmt);
 
 	        System.out.println("The Record has successfully being deleted");
@@ -47,7 +47,7 @@ public class JSRUpdate {
 	        try {
 	            JSRDb dbUt = new JSRDb();
 
-	            String sql_stmt = "SELECT  firstname, age FROM employee WHERE id = " + id ;
+	            String sql_stmt = "SELECT  first, last, age FROM employee WHERE id = " + id ;
 	            ResultSet resultSet = dbUt.ReadRecords(sql_stmt);
 
 	            // process query results

@@ -14,7 +14,7 @@ public class JSRDb {
     public JSRDb() throws SQLException {
         // establish connection to database  
         try {
-            connection = DriverManager.getConnection(DATABASE_URL, "nadirah", "hnma2701");
+            connection = DriverManager.getConnection(DATABASE_URL, "wani", "wanifitri1@");
 
         } catch (SQLException ex) {
             System.out.println("The following error has occured: " + ex.getMessage());

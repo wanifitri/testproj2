@@ -18,11 +18,11 @@ public class JSRDelete{
 	          //retrieve record to update
 	          DisplayRecord(id);
 
-	          String confirm_delete;
+	          /*String confirm_delete;
 	          System.out.println("Enter Y to confirm deletion: ");
 	          confirm_delete = userInput.next();
 
-	          if ("Y".equals(confirm_delete)) {
+	          if ("Y".equals(confirm_delete))*/ {
 	              JSRDb dbUt = new JSRDb();
 
 	              String sql_stmt = "DELETE FROM employee WHERE id = " + id;
@@ -39,7 +39,7 @@ public class JSRDelete{
 	          try {
 	              JSRDb dbUt = new JSRDb();
 
-	              String sql_stmt = "SELECT id, name, email, contact_number FROM contacts WHERE id = " + id;
+	              String sql_stmt = "SELECT first, last, age FROM employee WHERE id = " + id;
 	              ResultSet resultSet = dbUt.ReadRecords(sql_stmt);
 
 	              // process query results

@@ -10,8 +10,8 @@ public class JSRCreateDb {
  static final String DB_URL = "jdbc:mysql://localhost/";
 
  //  Database credentials
- static final String USER = "nadirah";
- static final String PASS = "hnma2701";
+ static final String USER = "wani";
+ static final String PASS = "wanifitri1@";
  
  public static void main(String[] args) {
  Connection conn = null;
