@@ -25,7 +25,7 @@ public class JDBC_Create {
       System.out.println("Creating database...");
       stmt = conn.createStatement();
       
-      String sql = "CREATE DATABASE JSR";
+      String sql = "CREATE DATABASE happily_married";
       stmt.executeUpdate(sql);
       System.out.println("Database created successfully...");
    }catch(SQLException se){

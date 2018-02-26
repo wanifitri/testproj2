@@ -26,14 +26,22 @@ public class JDBC_Create_Tables {
       System.out.println("Creating table in given database...");
       stmt = conn.createStatement();
       
-      String sql = "CREATE TABLE EMPLOYEE " +
+      String sql = "CREATE TABLE kids " +
                    "(id INTEGER not NULL, " +
                    " first VARCHAR(255), " + 
                    " last VARCHAR(255), " + 
                    " age INTEGER, " + 
                    " PRIMARY KEY ( id ))"; 
+      
+      String sql1 = "CREATE TABLE house " +
+              "(id INTEGER not NULL, " +
+              " first VARCHAR(255), " + 
+              " last VARCHAR(255), " + 
+              " age INTEGER, " + 
+              " PRIMARY KEY ( id ))"; 
 
       stmt.executeUpdate(sql);
+      stmt.executeUpdate(sql1);
       System.out.println("Created table in given database...");
    }catch(SQLException se){
       //Handle errors for JDBC
